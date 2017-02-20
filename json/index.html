@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myJson">
+<head>
+    <meta name="view" charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Twitter</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style_res.css">
+    <script src="lib/underscore-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+    <script src="lib/angular-animate.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers/jsonController.js"></script>
+</head>
+<body ng-controller="jsonController">
+    <div class="container">
+        <div class="title">{{title}}</div>
+        <div class="title">{{TwitterName}}</div>
+        <div class="container" ng-view>
+            
+        </div>
+    </div>
+</body>
+</html>
