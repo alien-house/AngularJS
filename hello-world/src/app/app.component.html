@@ -6,11 +6,30 @@
       <h1>Angular</h1>
       <h2>I'm ghere</h2>
       
-      
-      
-      <app-server></app-server>
+      <app-servers></app-servers>
 
     </div>
+
+
+    <div class="col-xs-12">
+      おおおおおお
+        <!-- <ul>
+            <li class="text" *ngFor="let item of items | async">
+              {{item.name}}
+            </li>
+          </ul> -->
+
+    <div *ngIf="afAuth.authState | async; let user; else showLogin">
+        <h1>Hello {{ user.displayName }}!</h1>
+        <button (click)="logout()">Logout</button>
+      </div>
+      <ng-template #showLogin>
+        <p>Please login.</p>
+        <button (click)="login()">Login with Google</button>
+      </ng-template>
+      </div>
+
+
     <div class="col-xs-12">
         <courses></courses>
       </div>
